@@ -28,6 +28,9 @@ const NavBar: React.FC = () => {
         <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
           Projetos
         </Link>
+        <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
+          Fale Comigo
+        </Link>
       </div>
 
       {/* Mobile Hamburguer*/}
