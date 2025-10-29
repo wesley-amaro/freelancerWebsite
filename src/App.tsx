@@ -14,7 +14,7 @@ function App() {
 
         <main className="flex-1 px-4 md:px-6">
           <Routes>
-            <Route path="/About" element={<Hero />} />
+            <Route path="/" element={<Hero />} />
             <Route path="/MyServices" element={<MyServices />} />
             <Route path="/Projects" element={<Projects />} />
           </Routes>
