@@ -1,9 +1,9 @@
-// import React from "react";
+import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaDiagramProject } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-[#004299] text-white py-8 px-4 border-t border-gray-700">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-6">
@@ -74,6 +74,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
