@@ -19,16 +19,22 @@ const NavBar: React.FC = () => {
         <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
           Home
         </Link>
-        <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
+        <Link to="/About" className="hover:bg-[black] hover:text-[#0de7fa]">
           Sobre Mim
         </Link>
-        <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
+        <Link
+          to="/MyServices"
+          className="hover:bg-[black] hover:text-[#0de7fa]"
+        >
           Serviços
         </Link>
-        <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
+        <Link to="/Projects" className="hover:bg-[black] hover:text-[#0de7fa]">
           Projetos
         </Link>
-        <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
+        <Link
+          to="/FaleComigo"
+          className="hover:bg-[black] hover:text-[#0de7fa]"
+        >
           Fale Comigo
         </Link>
       </div>
