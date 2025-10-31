@@ -1,0 +1,141 @@
+/* ====== SEÇÃO GERAL ====== */
+.projects-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #001f4d, #004bb8);
+  color: #fff;
+  text-align: center;
+  perspective: 1000px; /* Base 3D para os cards */
+}
+
+.projects-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* ====== CARROSSEL ====== */
+.projects-slider {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 2rem 0;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.projects-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-slider::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+/* ====== CARTAS 3D ====== */
+.project-card {
+  flex: 0 0 300px;
+  height: 380px;
+  perspective: 1200px; /* Permite o efeito 3D */
+  scroll-snap-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.project-card:hover .project-inner {
+  transform: rotateY(180deg);
+}
+
+/* ====== FRENTE ====== */
+.project-front,
+.project-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-front {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.project-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====== VERSO ====== */
+.project-back {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.project-back h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tool-tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.project-link {
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: #005ecc;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+  .projects-slider {
+    gap: 1.2rem;
+  }
+
+  .project-card {
+    flex: 0 0 260px;
+    height: 330px;
+  }
+
+  .project-back h3 {
+    font-size: 1.1rem;
+  }
+}
