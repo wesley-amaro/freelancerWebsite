@@ -20,16 +20,16 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="w-full min-h-screen flex items-center justify-center bg-[#0de7fa] text-black px-6 py-16"
+      className="w-full min-h-screen flex items-center justify-center bg-[#0de7fa] overflow-x-hidden px-4 md:px-6 py-4"
     >
-      <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6 md:px-8">
         {/* Coluna esquerda - Imagens */}
         <div className="relative flex justify-center md:justify-end">
           <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80">
             <img
               src={fotoPrimaria}
               alt="Foto 1 de Wesley Amaro"
-              className="w-full h-full objetc-cover rounded-2xl shadow-2xl"
+              className="w-full h-full object-cover rounded-2xl shadow-2xl"
             />
             {/* Imagens que Ficarão Sobrepostas*/}
             <img
@@ -77,7 +77,7 @@ const About: React.FC = () => {
             {tecnologias.map((tech) => (
               <span
                 key={tech}
-                className="px-4 py-1.5 rounded-full text-sm font-semibold bg-neutral-200 hover:bg-neutral-700 hover:text-white transition cursor-default"
+                className="px-4 py-1.5 rounded-full text-sm font-semibold bg-white/20 hover:bg-neutral-700 hover:text-white transition cursor-default"
               >
                 {tech}
               </span>
