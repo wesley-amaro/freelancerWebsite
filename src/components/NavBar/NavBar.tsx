@@ -7,15 +7,18 @@ const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0de7fa] text-black px-4 md:px-6 py-4 flex items-center justify-between">
-      <div className="text-2xl font-bold text-black font-serif">
-        <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
+    <nav className="bg-[#004299] text-amber-100 px-4 md:px-6 py-4 flex items-center justify-between font-semibold">
+      <div className="text-2xl font-bold font-serif">
+        <Link
+          to="/"
+          className="hover:bg-[#0de7fa] hover:text-[white] rounded-full"
+        >
           Meu Site
         </Link>
       </div>
 
       {/* Desktop links */}
-      <div className="hidden md:flex space-x-6 font-bold text-lg ">
+      <div className="hidden md:flex space-x-6 font-semibold text-lg font-serif">
         <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
           Home
         </Link>
