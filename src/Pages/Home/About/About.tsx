@@ -1,28 +1,15 @@
 import React from "react";
 import fotoPrimaria from "../../../assets/imagens/wes-sorriindo-party.jpg";
 import fotoSecundaria from "../../../assets/imagens/wes-sorriindo-party.jpg";
-
-const tecnologias: string[] = [
-  "React",
-  "TypeScript",
-  "HTML",
-  "CSS",
-  "Java",
-  "Python",
-  "Tailwind",
-  "Material UI",
-  "Sass",
-  "SQL",
-  "GitHub",
-];
+import AboutServices from "./AboutServices";
 
 const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="w-full min-h-screen flex items-center justify-center bg-[#0de7fa] overflow-x-hidden px-4 md:px-6 py-4"
+      className="relative w-screen min-h-screen flex items-center justify-center bg-[#0de7fa] overflow-x-hidden"
     >
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6 md:px-8">
+      <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6 md:px-10 py-10">
         {/* Coluna esquerda - Imagens */}
         <div className="relative flex justify-center md:justify-end">
           <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80">
@@ -74,14 +61,7 @@ const About: React.FC = () => {
 
           {/* Tecnologias Dinamicas - Array [] */}
           <div className="flex flex-wrap gap-3 pt-4">
-            {tecnologias.map((tech) => (
-              <span
-                key={tech}
-                className="px-4 py-1.5 rounded-full text-sm font-semibold bg-white/20 hover:bg-neutral-700 hover:text-white transition cursor-default"
-              >
-                {tech}
-              </span>
-            ))}
+            <AboutServices />
           </div>
         </div>
       </div>
