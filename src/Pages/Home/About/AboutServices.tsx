@@ -4,12 +4,25 @@ const AboutServices: React.FC = () => {
   return (
     <section className="services">
       <div>
-        💻 O que eu faço Crio sites e landing pages personalizadas que ajudam
-        negócios a: 📈 Atrair mais clientes online 💬 Facilitar o contato com
-        clientes via WhatsApp 🧠 Transmitir mais confiança e profissionalismo ⚙️
-        Ter uma presença digital moderna e responsiva quero que minhas skills
-        tecnicas fiquem passando de um lado pro outro, como se fosse uma
-        esteira, andando para a direita (de lado){" "}
+        <h2 className="font-bold text-base sm:text-lg leading-relaxed text-neutral-700">
+          💻 O que eu faço?
+        </h2>
+
+        <div>
+          <p className="text-base sm:text-lg leading-relaxed text-neutral-700">
+            {" "}
+            Crio sites e landing pages personalizadas que ajudam negócios a:{" "}
+          </p>
+
+          <br />
+
+          <p className="font-bold font-sans text-base sm:text-lg leading-relaxed text-neutral-800">
+            📈 Atrair mais clientes online <br />
+            💬 Facilitar o contato com clientes via WhatsApp <br />
+            🧠 Transmitir mais confiança e profissionalismo <br />
+            ⚙️ Ter uma presença digital moderna e responsiva <br />
+          </p>
+        </div>
       </div>
     </section>
   );
