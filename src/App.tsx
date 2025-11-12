@@ -4,6 +4,8 @@ import MyServices from "./Pages/Home/MyServices/MyServices";
 import Projects from "./Pages/Home/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/Home";
+import About from "./Pages/Home/About/About";
+import AboutCards from "./Pages/Home/About/AboutCards";
 // import "./theme/theme.css";
 
 function App() {
@@ -12,10 +14,19 @@ function App() {
       <div>
         <NavBar />
 
-        <main className="flex-1 px-4 md:px-6">
+        <main className="flex-1 w-full">
           <Routes>
             <Route path="/" element={<Home />} />{" "}
             {/* // Hero.tsx ESTÁ RENDERIZADO DENTRO DO Home.tsx  */}
+            <Route
+              path="About"
+              element={
+                <div className="flex flex-col items-center gap- w-full overflow-hidden">
+                  <About />
+                  <AboutCards />
+                </div>
+              }
+            />
             <Route path="/MyServices" element={<MyServices />} />
             <Route path="/Projects" element={<Projects />} />
           </Routes>
