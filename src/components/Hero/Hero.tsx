@@ -4,9 +4,11 @@ import "./Hero.css"; //CSS separado para animação de fundo
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero">
-      <div className="hero-bg"></div>
-      {/* fundo animado */}
+    <div className="hero">
+      <video autoPlay loop muted playsInline className="video-bg">
+        <source src="/bg-mario-video.mp4" type="video/mp4" />
+      </video>
+
       <div className="hero-content">
         <img src={heroPhoto} alt="Wesley Amaro" className="hero-photo" />
         <h1 className="hero-name">Wesley Amaro</h1>
@@ -14,7 +16,7 @@ const Hero: React.FC = () => {
           Desenvolvedor Full-Stack com Abordagem Front-End
         </p>
       </div>
-    </section>
+    </div>
   );
 };
 
