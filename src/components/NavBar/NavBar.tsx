@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-// import "../../theme/theme.css";
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#004299] text-amber-100 px-4 md:px-6 py-4 flex items-center justify-between font-semibold">
+    <nav className="bg-[#131414] text-blue-50 px-4 md:px-6 py-4 flex items-center justify-between font-semibold overflow-hidden">
       <div className="text-2xl font-bold font-serif">
         <Link
           to="/"
-          className="hover:bg-[#0de7fa] hover:text-[white] rounded-full"
+          className="hover:bg-[#131414] hover:text-[#131414] rounded-4xl"
         >
           Meu Site
         </Link>

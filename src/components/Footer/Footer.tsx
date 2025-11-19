@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#004299] text-white py-8 px-4 border-t border-gray-700">
+    <footer className="bg-[#131414] text-white py-8 px-4 border-t border-[#131414]">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-6">
         {/* Texto principal */}
         <p className="font-sans max-w-2xl sm:text-base leading-relaxed font-bold">
