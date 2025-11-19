@@ -1,0 +1,129 @@
+/* Hero.css - Versão Aprimorada */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+  padding: 2rem;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  /* border: none; */
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* background-image: url("../../assets/backgroundImage/backgroundImage.png"); */
+  /* background: linear-gradient(120deg, #131414, #151616, #282a2a, #131414); */
+
+  /* background-size: 150% 150%; */
+
+  /* animation: gradientBG 10s ease infinite;
+  filter: brightness(0.85); */
+
+  /* transition: filter 0.5s ease; */
+}
+
+/* Animação de gradiente suave */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Foto com efeito hover */
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hero-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Nome com efeito de transição de cor */
+.hero-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  transition: color 0.4s ease;
+  cursor: default;
+}
+
+.hero-name:hover {
+  color: #030303;
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+}
+
+.hero-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+.hero-title:hover {
+  color: #030303;
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* .hero-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  opacity: 0.9;
+} */
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+  .hero-name {
+    font-size: 2rem;
+  }
+  .hero-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-photo {
+    width: 120px;
+    height: 120px;
+  }
+  .hero-name {
+    font-size: 1.75rem;
+  }
+  .hero-title {
+    font-size: 0.9rem;
+  }
+}
