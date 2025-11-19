@@ -10,6 +10,7 @@
   overflow: hidden;
   padding: 2rem;
   font-family: "Segoe UI", Roboto, sans-serif;
+  /* border: none; */
 }
 
 .hero-bg {
@@ -18,9 +19,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(120deg, #004299, #0072ff, #00c6ff, #00ffe0);
-  background-size: 400% 400%;
-  animation: gradientBG 30s ease infinite;
+  background-image: url("../../assets/backgroundImage/backgroundImage.png");
+  /* background: linear-gradient(120deg, #131414, #151616, #282a2a, #131414); */
+  background-size: 150% 150%;
+  animation: gradientBG 10s ease infinite;
   filter: brightness(0.85);
   z-index: 0;
   transition: filter 0.5s ease;
