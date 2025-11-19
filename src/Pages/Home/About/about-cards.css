@@ -1,0 +1,28 @@
+/* Remove scrollbar sempre */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* CONTÊINER DA ESTEIRA */
+.slider {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: slide linear infinite;
+  animation-duration: 60s; /* será sobrescrito pelo inline style */
+}
+
+/* Pausa a animação */
+.slider.paused {
+  animation-play-state: paused;
+}
+
+/* ANIMAÇÃO DA ESTEIRA INFINITA */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%); /* 3x duplicado → 1/3 por ciclo */
+  }
+}
