@@ -2,16 +2,17 @@ import React from "react";
 import fotoPrimaria from "../../../assets/imagens/wes-sorriindo-party.jpg";
 import fotoSecundaria from "../../../assets/imagens/wes-sorriindo-party.jpg";
 import AboutServices from "./AboutServices";
-import AboutCards from "./AboutCards";
+// import AboutCards from "./AboutCards";
+import "./About.css";
 
 const About: React.FC = () => {
   return (
     <>
       <section
         id="about"
-        className="relative w-screen min-h-screen flex items-center justify-center bg-[#131414] overflow-x-hidden"
+        className="bg-animado relative w-screen min-h-screen flex items-center justify-center bg-[#131414] overflow-x-hidden"
       >
-        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6 md:px-10 py-10">
+        <div className=" w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6 md:px-10 py-10">
           {/* Coluna esquerda - Imagens */}
           <div className="relative flex justify-center md:justify-end">
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80">
@@ -34,7 +35,7 @@ const About: React.FC = () => {
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-cyan-400">
               Sobre Mim
             </h2>
-            <p className="text-base sm:text-lg leading-relaxed text-neutral-200">
+            <p className="text-base sm:text-lg leading-relaxed text-neutral-100">
               👋🏽Olá! Sou{" "}
               <strong>Wesley Amaro 👨🏽‍💻, Desenvolvedor Full Stack</strong> com
               foco em <strong>Front-End</strong>. Trabalho com tecnologias{" "}
@@ -44,7 +45,7 @@ const About: React.FC = () => {
               para criar interfaces modernas e bem estruturadas.
             </p>
 
-            <p className="text-base sm:text-lg leading-relaxed text-neutral-200">
+            <p className="text-base sm:text-lg leading-relaxed text-neutral-100">
               💫 Sou apaixonado por criar <strong>interfaces modernas,</strong>{" "}
               funcionais e responsivas. Busco constantemente unir{" "}
               <strong>
@@ -54,7 +55,7 @@ const About: React.FC = () => {
               <strong>usuário 🖥️.</strong>
             </p>
 
-            <p className="text-base sm:text-lg leading-relaxed text-neutral-200">
+            <p className="text-base sm:text-lg leading-relaxed text-white">
               🚀 Ajudo <strong>empresas e profissionais autônomos</strong> a
               construírem presença digital com sites{" "}
               <strong>modernos, rápidos e profissionais —</strong> que atraem
@@ -68,7 +69,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
-      <AboutCards />
+      {/* <AboutCards /> */}
     </>
   );
 };
