@@ -16,7 +16,7 @@
   /* min-height: 100vh; */
 }
 
-.video-bg {
+/* .video-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,6 +24,13 @@
   height: 100%;
   z-index: 0;
   object-fit: cover;
+} */
+
+.hero-bg-animado {
+  background-image: url("../../assets/backgroundImage/fundobg-maos.gif.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
