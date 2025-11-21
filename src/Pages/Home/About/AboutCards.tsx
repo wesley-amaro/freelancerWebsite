@@ -35,7 +35,7 @@ const AboutCards: React.FC = () => {
   const [paused] = useState(false);
 
   return (
-    <div className="relative w-full overflow-hidden py-6 select-none">
+    <div className="relative w-full overflow-hidden py-6 select-none cards-bg-animado">
       {/* ESTEIRA */}
       <div
         className={`slider ${paused ? "paused" : ""}`}
