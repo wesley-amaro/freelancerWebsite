@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import "./navBar.css";
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#131414] text-blue-50 px-4 md:px-6 py-4 flex items-center justify-between font-semibold overflow-hidden">
+    <nav className="navBar-bg-animado bg-[#131414] text-blue-50 px-4 md:px-6 py-4 flex items-center justify-between font-semibold overflow-hidden">
       <div className="text-2xl font-bold font-serif">
         <Link
           to="/"
