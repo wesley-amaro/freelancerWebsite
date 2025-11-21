@@ -26,3 +26,10 @@
     transform: translateX(-33.333%); /* 3x duplicado → 1/3 por ciclo */
   }
 }
+
+.cards-bg-animado {
+  background-image: url("../../../assets/backgroundImage/bg-fundo-strela-parada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
