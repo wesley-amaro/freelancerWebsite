@@ -1,0 +1,9 @@
+.footer-bg-animado {
+  background-image: url("../../assets/backgroundImage/fundobg-astronauta.gif.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}

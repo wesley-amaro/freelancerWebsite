@@ -2,12 +2,16 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaDiagramProject } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import "./Footer.css";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#131414] text-white py-8 px-4 border-t border-[#131414]">
+    <footer className="bg-[#131414] text-white py-30 px-4 border-t border-[#131414] footer-bg-animado w-screen min-h-screen">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-6">
         {/* Texto principal */}
+        <br />
+        <br />
+        <br />
         <p className="font-sans max-w-2xl sm:text-base leading-relaxed font-bold">
           Explore minhas redes, veja meus projetos e, se quiser trocar uma
           ideia, entre em contato comigo. Até breve! 😊
@@ -20,7 +24,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
-            className="transition-transform transform hover:scale-110 hover:text-green-400"
+            className="transition-transform transform hover:scale-110 hover:text-green-300"
           >
             <FaWhatsapp className="w-7 h-7" />
           </a>
@@ -30,7 +34,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Linkedin"
-            className="transition-transform transform hover:scale-110 hover:text-blue-700"
+            className="transition-transform transform hover:scale-110 hover:text-blue-500"
           >
             <FaLinkedin className="w-7 h-7" />
           </a>
@@ -40,7 +44,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="E-mail"
-            className="transition-transform transform hover:scale-110 hover:text-red-800"
+            className="transition-transform transform hover:scale-110 hover:text-red-500"
           >
             <MdEmail className="w-7 h-7" />
           </a>
@@ -49,7 +53,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Portfolio"
-            className="transition-transform transform hover:scale-110 hover:text-purple-950"
+            className="transition-transform transform hover:scale-110 hover:text-purple-400"
           >
             <FaDiagramProject className="w-7 h-7" />
           </a>
@@ -59,7 +63,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Github"
-            className="transition-transform transform hover:scale-110 hover:text-black"
+            className="transition-transform transform hover:scale-110 hover:text-orange-400"
           >
             <FaGithub className="w-7 h-7" />
           </a>
