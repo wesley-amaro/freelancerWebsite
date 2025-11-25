@@ -7,36 +7,39 @@ const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navBar-bg-animado bg-[#131414] text-blue-50 px-4 md:px-6 py-4 flex items-center justify-between font-semibold overflow-hidden">
-      <div className="text-2xl font-bold font-serif">
+    <nav className="navBar-bg-animado text-white px-4 md:px-6 py-4 flex items-end justify-between overflow-hidden font-serif">
+      <div className="text-4xl font-semibold">
         <Link
           to="/"
-          className="hover:bg-[#131414] hover:text-[#131414] rounded-4xl"
+          className="hover:bg-[#2a05a4] hover:text-[#ffffff] px-3 py-1 rounded-full transition-all duration-400 ease-out hover:scale-[5.0] hover:-translate-y-[2px]"
         >
-          Meu Site
+          Home
         </Link>
       </div>
 
       {/* Desktop links */}
-      <div className="hidden md:flex space-x-6 font-semibold text-lg font-serif">
-        <Link to="/" className="hover:bg-[black] hover:text-[#0de7fa]">
-          Home
-        </Link>
-        <Link to="/About" className="hover:bg-[black] hover:text-[#0de7fa]">
+      <div className=" md:flex space-x-6 font-semibold text-2xl">
+        <Link
+          to="/About"
+          className="hover:bg-[#2a05a4] hover:text-[#ffffff] px-3 py-1 rounded-full transition-all duration-400 ease-out"
+        >
           Sobre Mim
         </Link>
         <Link
           to="/MyServices"
-          className="hover:bg-[black] hover:text-[#0de7fa]"
+          className="hover:bg-[#2a05a4] hover:text-[#ffffff] px-3 py-1 rounded-full transition-all duration-400 ease-out"
         >
           Serviços
         </Link>
-        <Link to="/Projects" className="hover:bg-[black] hover:text-[#0de7fa]">
+        <Link
+          to="/Projects"
+          className="hover:bg-[#2a05a4] hover:text-[#ffffff] px-3 py-1 rounded-full transition-all duration-400 ease-out"
+        >
           Projetos
         </Link>
         <Link
           to="/FaleComigo"
-          className="hover:bg-[black] hover:text-[#0de7fa]"
+          className="hover:bg-[#2a05a4] hover:text-[#ffffff] px-3 py-1 rounded-full transition-all duration-400 ease-out"
         >
           Fale Comigo
         </Link>
@@ -50,9 +53,9 @@ const NavBar: React.FC = () => {
           aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
         >
           {isOpen ? (
-            <XMarkIcon className="h-6 w-6 text-black" />
+            <XMarkIcon className="h-6 w-6 text-white" />
           ) : (
-            <Bars3Icon className="h-6 w-6 text-black" />
+            <Bars3Icon className="h-6 w-6 text-white" />
           )}
         </button>
       </div>
