@@ -6,7 +6,6 @@ import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/Home/About/About";
 import AboutCards from "./Pages/Home/About/AboutCards";
-// import "./theme/theme.css";
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
             <Route
               path="About"
               element={
-                <div className="flex flex-col items-center gap- w-full overflow-hidden">
+                <div className="flex flex-col items-center gap w-full overflow-y-auto">
                   <About />
                   <AboutCards />
                 </div>

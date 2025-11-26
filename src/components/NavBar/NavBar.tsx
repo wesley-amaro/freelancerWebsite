@@ -7,7 +7,7 @@ const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navBar-bg-animado text-white px-4 md:px-6 py-4 flex items-center justify-between overflow-hidden font-serif relative z-50">
+    <nav className="navBar-bg-animado text-white px-4 md:px-6 py-4 flex items-center justify-between overflow-visible font-serif relative z-50">
       <div className="text-4xl font-semibold">
         <Link
           to="/"
@@ -52,7 +52,7 @@ const NavBar: React.FC = () => {
 
       {/* MOBILE DROPDOWN */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-black/80 backdrop-blur-md flex flex-col items-center space-y-6 py-6 md:hidden text-2xl">
+        <div className="absolute top-full left-0 w-full bg-[#0d0136]/50 backdrop-blur-md flex flex-col items-center space-y-6 py-6 md:hidden text-2xl">
           {[
             { to: "/About", label: "Sobre Mim" },
             { to: "/MyServices", label: "Serviços" },
