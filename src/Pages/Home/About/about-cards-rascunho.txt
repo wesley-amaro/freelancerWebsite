@@ -1,0 +1,37 @@
+/* Remove scrollbar sempre (opcional) */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* CONTÊINER DA ESTEIRA */
+.slider {
+  display: flex;
+  gap: 2rem;
+  animation: slide 60s linear infinite;
+}
+
+/* Pausa a animação */
+.slider.paused {
+  animation-play-state: paused;
+}
+
+/* ANIMAÇÃO DA ESTEIRA INFINITA */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.cards-bg-animado {
+  background-image: url("../../../assets/backgroundImage/bg-fundo-strela-parada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  overflow: hidden; /* 🟩 impede scroll lateral */
+  position: relative;
+}
