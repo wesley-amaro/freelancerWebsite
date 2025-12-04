@@ -10,7 +10,7 @@ const About: React.FC = () => {
     <>
       <section
         id="about"
-        className="bg-animado relative w-screen min-h-screen flex items-center justify-center bg-[#131414] overflow-x-hidden"
+        className="bg-animado relative w-screen min-h-screen flex items-center justify-center bg-[#131414] overflow-hidden"
       >
         <div className=" w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6 md:px-10 py-10">
           {/* Coluna esquerda - Imagens */}

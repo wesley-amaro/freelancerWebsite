@@ -1,15 +1,20 @@
-/* Remove scrollbar sempre */
-::-webkit-scrollbar {
-  display: none;
+/* CONTÊINER DA ESTEIRA */
+.cards-bg-animado {
+  width: 100%;
+  overflow: hidden; /* impede scroll lateral */
+  position: relative;
+  background-image: url("../../../assets/backgroundImage/bg-fundo-strela-parada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
 }
 
-/* CONTÊINER DA ESTEIRA */
+/* ESTEIRA DE CARDS */
 .slider {
   display: flex;
   gap: 2rem;
-  width: max-content;
-  animation: slide linear infinite;
-  animation-duration: 60s; /* será sobrescrito pelo inline style */
+  animation: slide 60s linear infinite;
 }
 
 /* Pausa a animação */
@@ -23,13 +28,45 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.333%); /* 3x duplicado → 1/3 por ciclo */
+    transform: translateX(-50%); /* metade dos cards duplicados */
   }
 }
 
-.cards-bg-animado {
-  background-image: url("../../../assets/backgroundImage/bg-fundo-strela-parada.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* CARDS INDIVIDUAIS */
+.card {
+  flex: 0 0 12rem; /* largura fixa, responsiva */
+  height: 16rem;
+  background-color: #131414;
+  border: 1px solid #3f3f3f;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00eaff;
+  border-color: #00eaff;
+}
+
+.card.selected {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #00eaff;
+  border-color: #00eaff;
+}
+
+.card-icon {
+  color: #00eaff;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
 }

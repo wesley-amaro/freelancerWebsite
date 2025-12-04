@@ -1,18 +1,3 @@
-/* .about {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  width: 100%;
-  height: 100vh;
-  color: white;
-  overflow: hidden;
-  padding: 2rem;
-  font-family: "Segoe UI", Roboto, sans-serif;
-} */
-
 .bg-animado {
   background-image: url("../../../assets/backgroundImage/stars-FadeOut.gif.gif");
   background-size: cover;
