@@ -3,50 +3,8 @@
 html,
 body,
 #root {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #131414;
+  min-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes pulse-glow {
-  0%,
-  100% {
-    box-shadow: 0 0 15px rgba(0, 200, 255, 0.5), 0 0 30px rgba(0, 200, 255, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(0, 200, 255, 0.8), 0 0 45px rgba(0, 200, 255, 0.4);
-  }
-}
-
-@keyframes rotate-glow {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@utility animate-scroll {
-  animation: scroll 25s linear infinite;
-}
-
-@utility animate-pulse-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
-}
-
-@utility animate-rotate-glow {
-  animation: rotate-glow 6s linear infinite;
 }

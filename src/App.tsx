@@ -20,7 +20,7 @@ function App() {
             <Route
               path="About"
               element={
-                <div className="flex flex-col items-center gap w-full overflow-y-auto">
+                <div className="flex flex-col items-center gap w-full overflow-hidden">
                   <About />
                   <AboutCards />
                 </div>
