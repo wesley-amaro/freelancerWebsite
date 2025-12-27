@@ -1,7 +1,10 @@
 /* ====== SEÇÃO GERAL ====== */
 .projects-section {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #001f4d, #004bb8);
+  background-image: url("../../../assets/backgroundImage/galaxy2.gif.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   text-align: center;
   perspective: 1000px; /* Base 3D para os cards */

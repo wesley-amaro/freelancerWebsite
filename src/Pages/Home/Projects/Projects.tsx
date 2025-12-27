@@ -1,6 +1,12 @@
 import React from "react";
 import "./Projects.css";
-import fotoTeste from "../../../assets/imagens/wes-sorriindo-party.jpg";
+import "./projects-background.css";
+// import fotoTeste from "../../../assets/imagens/wes-sorriindo-party.jpg";
+import SistemaTicket from "../../../assets/imagens-projects/sistema-controle-tickets.png";
+import Portfolio from "../../../assets/imagens-projects/MyPortfolio.png";
+import TaskList from "../../../assets/imagens-projects/ListaDeTarefas.png";
+import SistemaEstoque from "../../../assets/imagens-projects/sistema-controle-estoques.png";
+import FotoGitHub from "../../../assets/imagens-projects/GitHubProfile.png";
 
 interface Project {
   name: string;
@@ -12,39 +18,55 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Portfólio Pessoal",
-    image: fotoTeste,
-    tools: ["React", "TypeScript", "Material UI", "Python", "SQL", "FastAPI"],
+    name: "Sistema de Controle de Tickets",
+    image: SistemaTicket,
+    tools: [
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Python",
+      "Java",
+      "SQL",
+      "API Rest",
+      "CRUD",
+    ],
+    link: "",
+    status: "Concluido",
+  },
+  {
+    name: "Plataforma de Portfólio Pessoal",
+    image: Portfolio,
+    tools: [
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Vite",
+      "Python (FastAPI)",
+      "SQLite",
+    ],
     link: "https://myportfolio-nine-taupe.vercel.app",
     status: "Concluido",
   },
   {
-    name: "Lista de Tarefas",
-    image: fotoTeste,
-    tools: ["React", "TypeScript", "Material UI"],
-    link: "https://github.com/wesley-amaro/listaDeTarefas-react-tailwind",
-    status: "Concluido",
-  },
-  {
     name: "Portfólio Github",
-    image: fotoTeste,
+    image: FotoGitHub,
     tools: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/wesley-amaro/pohawesleyp",
     status: "Concluido",
   },
   {
-    name: "Projeto Estudantil: Site HTML Puro",
-    image: fotoTeste,
-    tools: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/wesley-amaro/projeto-aula-google-glass",
+    name: "Projeto de Sistema de Controle de Estoque",
+    image: SistemaEstoque,
+    tools: ["React", "Java (Spring Boot)", "SQL", "API Rest"],
+    link: "",
     status: "Concluído",
   },
   {
-    name: "Projeto Pessoal: Site Familiar",
-    image: fotoTeste,
-    tools: ["React", "TypeScript", "Sass", "Java", "SQL"],
-    link: "https://github.com/wesley-amaro/my-family-app",
-    status: "Em Andamento",
+    name: "Plataforma de Lista de Tarefas",
+    image: TaskList,
+    tools: ["React", "TypeScript", "Tailwind"],
+    link: "https://github.com/wesley-amaro/listaDeTarefas-react-tailwind",
+    status: "Concluído",
   },
 ];
 
